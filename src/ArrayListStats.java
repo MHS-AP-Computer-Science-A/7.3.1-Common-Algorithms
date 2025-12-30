@@ -43,10 +43,10 @@ public class ArrayListStats {
 
         ArrayList<Double> numbers = new ArrayList<>();
 
-        // Add 10 random values between -10 and 10
+        // Add 10 random values between -1 and 1
         for (int i = 0; i < 10; i++) {
-            double value = Math.random() * 20 - 10;
-            double rounded = Math.round(value * 100) / 100.0;
+            double value = Math.random() * 2 - 1;
+            double rounded = Math.round(value * 10) / 10.0;
             numbers.add(rounded);
         }
 
@@ -66,4 +66,5 @@ public class ArrayListStats {
         System.out.println(numbers);
     }
 }
+
 
