@@ -4,58 +4,39 @@ public class ArrayListStats {
 
     // 1. Returns true if the list contains a 0
     public static boolean containsZero(ArrayList<Double> list) {
-        for (double value : list) {
-            if (value == 0.0) {
-                return true;
-            }
-        }
+
+        
         return false;
     }
 
     // 2. Computes and returns the average
     public static double average(ArrayList<Double> list) {
-        double sum = 0;
-        for (double value : list) {
-            sum += value;
-        }
-        return sum / list.size();
+
+        
+        return 0.0;
     }
 
     // 3. Computes and returns the maximum value
     public static double maxValue(ArrayList<Double> list) {
-        double max = list.get(0);
-        for (double value : list) {
-            if (value > max) {
-                max = value;
-            }
-        }
-        return max;
+        
+
+        return 0.0;
     }
 
     // 4. Counts and returns the number of negative values
     public static int countNegatives(ArrayList<Double> list) {
-        int count = 0;
-        for (double value : list) {
-            if (value < 0) {
-                count++;
-            }
-        }
-        return count;
+
+
+
+        return 0;
     }
 
     // 5. Reverses the elements of the list 
     public static void reverse(ArrayList<Double> list) {
-        int left = 0;
-        int right = list.size() - 1;
+        // Swap the first and last element,
+        // then swap the 2nd and 2nd to last, and so on...
 
-        while (left < right) {
-            double temp = list.get(left);
-            list.set(left, list.get(right));
-            list.set(right, temp);
-
-            left++;
-            right--;
-        }
+        
     }
 
     public static void main(String[] args) {
@@ -85,3 +66,4 @@ public class ArrayListStats {
         System.out.println(numbers);
     }
 }
+
